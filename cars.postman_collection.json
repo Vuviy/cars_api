@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "17e787c6-d9c6-4db2-8299-92b0b41009c5",
+		"name": "cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Получение всех авто",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение авто с id 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars/3",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение всех авто с сортировкой по имени",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?sort=name",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение всех авто с сортировкой по году",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?sort=year",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "year"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение всех авто с сортировкой по цвету",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?sort=color",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "color"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Результат поиска по имени Rick",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?search=Rick",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Rick"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Результат поиска по гос. номеру который начинается на JE1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?search=JE1",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "JE1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Результат поиска по VIN который имеет VP1HR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?search=VP1HR",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "VP1HR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Полечение авто марки FORD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?make=FORD",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "FORD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Полечение авто марки FORD и модели Escape",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?make=FORD&model=Escape",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "FORD"
+						},
+						{
+							"key": "model",
+							"value": "Escape"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Полечение авто 2015 года выпуска",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?year=2015",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2015"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Экспорт всех авто отсортированых по годах",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?sort=year&export=true",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "year"
+						},
+						{
+							"key": "export",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Экспорт авто марки FORD отсортированых по имени",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?sort=year&export=true",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "year"
+						},
+						{
+							"key": "export",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавление авто в базу",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars?name=Artur&num=EX5988UY&color=green&VIN=1FMCU9J94FUA44289",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Artur"
+						},
+						{
+							"key": "num",
+							"value": "EX5988UY"
+						},
+						{
+							"key": "color",
+							"value": "green"
+						},
+						{
+							"key": "VIN",
+							"value": "1FMCU9J94FUA44289"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление авто с id 4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars/4",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars",
+						"4"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изминение цвета у авто с id 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars/2?color=black",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars",
+						"2"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "black"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изминение VIN у авто с id 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "car.loc/api/cars/2?VIN=3VWDP7AJ7DM356782",
+					"host": [
+						"car",
+						"loc"
+					],
+					"path": [
+						"api",
+						"cars",
+						"2"
+					],
+					"query": [
+						{
+							"key": "VIN",
+							"value": "3VWDP7AJ7DM356782"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
