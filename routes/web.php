@@ -14,8 +14,11 @@ use App\Http\Controllers\CarController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/cars', [CarController::class, 'export'])->name('export');
+
+
+//Route::get('/sraka', function (){
+//    dd(435);
+//});
+Route::get('/', [CarController::class, 'index']);

@@ -53,7 +53,15 @@ class CarController extends Controller
      */
     public function store(CarStoreRequest $request)
     {
-        $added_car = Car::create($this->parseVIN($request));
+
+        $data = $this->parseVIN($request);
+
+        if(!$data['model'] || !$data['make'] || !$data['year']){
+            $res = ['status' => 'failed', 'response' => 'Not found VIN'];
+            return response()->json($res);
+        }
+
+        $added_car = Car::create($data);
         return new CarResource($added_car);
     }
 
@@ -69,7 +77,9 @@ class CarController extends Controller
             return new CarResource(Car::findOrFail($id));
         }
         else{
-            return 'Not found';
+            $res = ['status' => 'failed', 'response' =>'Not found'];
+            return response()->json($res);
+
         }
     }
 
@@ -84,7 +94,13 @@ class CarController extends Controller
     {
         $car = Car::findOrFail($id);
         if($request->VIN){
-            $car->update($this->parseVIN($request));
+            $data = $this->parseVIN($request);
+
+            if(!$data['model'] || !$data['make'] || !$data['year']){
+                $res = ['status' => 'failed', 'response' => 'Not found VIN'];
+                return response()->json($res);
+            }
+            $car->update($data);
         }
         $car->update($request->all());
         return new CarResource(Car::findOrFail($id));
@@ -99,6 +115,7 @@ class CarController extends Controller
     public function destroy($id)
     {
         Car::destroy($id);
-        return 'deleted';
+        $res = ['status' => 'ok', 'response' => 'deleted'];
+        return response()->json($res);
     }
 }

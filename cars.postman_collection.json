@@ -2,21 +2,26 @@
 	"info": {
 		"_postman_id": "17e787c6-d9c6-4db2-8299-92b0b41009c5",
 		"name": "cars",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19173251",
+		"_collection_link": "https://www.postman.com/avionics-geoscientist-59122492/workspace/cars-api/collection/19173251-17e787c6-d9c6-4db2-8299-92b0b41009c5?action=share&source=collection_link&creator=19173251"
 	},
 	"item": [
 		{
-			"name": "Получение всех авто",
+			"name": "Get all cars",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars",
+					"raw": "http://localhost:8000/cars_api/public/api/cars",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					]
@@ -25,17 +30,20 @@
 			"response": []
 		},
 		{
-			"name": "Получение авто с id 3",
+			"name": "Get car with id 3",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars/3",
+					"raw": "http://localhost:8000/cars_api/public/api/cars/3",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars",
 						"3"
@@ -45,17 +53,20 @@
 			"response": []
 		},
 		{
-			"name": "Получение всех авто с сортировкой по имени",
+			"name": "Get all cars with sort by name",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?sort=name",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?sort=name",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -70,17 +81,20 @@
 			"response": []
 		},
 		{
-			"name": "Получение всех авто с сортировкой по году",
+			"name": "Get all cars with sort by year",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?sort=year",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?sort=year",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -95,17 +109,20 @@
 			"response": []
 		},
 		{
-			"name": "Получение всех авто с сортировкой по цвету",
+			"name": "Get all cars with sort by color",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?sort=color",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?sort=color",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -120,17 +137,20 @@
 			"response": []
 		},
 		{
-			"name": "Результат поиска по имени Rick",
+			"name": "Result of searching Rick",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?search=Rick",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?search=Rick",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -145,17 +165,20 @@
 			"response": []
 		},
 		{
-			"name": "Результат поиска по гос. номеру который начинается на JE1",
+			"name": "Result of searching by number starts with JE1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?search=JE1",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?search=JE1",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -170,17 +193,20 @@
 			"response": []
 		},
 		{
-			"name": "Результат поиска по VIN который имеет VP1HR",
+			"name": "Result of searching by VIN with VP1HR",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?search=VP1HR",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?search=VP1HR",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -195,17 +221,20 @@
 			"response": []
 		},
 		{
-			"name": "Полечение авто марки FORD",
+			"name": "Get all cars of FORD",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?make=FORD",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?make=FORD",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -220,17 +249,20 @@
 			"response": []
 		},
 		{
-			"name": "Полечение авто марки FORD и модели Escape",
+			"name": "Get all cars of FORD model Escape",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?make=FORD&model=Escape",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?make=FORD&model=Escape",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -249,17 +281,20 @@
 			"response": []
 		},
 		{
-			"name": "Полечение авто 2015 года выпуска",
+			"name": "Get all cars of 2015 year",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?year=2015",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?year=2015",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -279,17 +314,20 @@
 			"response": []
 		},
 		{
-			"name": "Экспорт всех авто отсортированых по годах",
+			"name": "Export  all cars with sorting by year",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?sort=year&export=true",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?sort=year&export=true",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -308,24 +346,31 @@
 			"response": []
 		},
 		{
-			"name": "Экспорт авто марки FORD отсортированых по имени",
+			"name": "Export all cars FORD with sorting by name",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?sort=year&export=true",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?sort=name&make=FORD&export=true",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
 					"query": [
 						{
 							"key": "sort",
-							"value": "year"
+							"value": "name"
+						},
+						{
+							"key": "make",
+							"value": "FORD"
 						},
 						{
 							"key": "export",
@@ -337,17 +382,20 @@
 			"response": []
 		},
 		{
-			"name": "Добавление авто в базу",
+			"name": "Add car",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars?name=Artur&num=EX5988UY&color=green&VIN=1FMCU9J94FUA44289",
+					"raw": "http://localhost:8000/cars_api/public/api/cars?name=Artur&num=EX5988UY&color=green&VIN=1FMCU9J94FUA44289",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars"
 					],
@@ -374,17 +422,20 @@
 			"response": []
 		},
 		{
-			"name": "Удаление авто с id 4",
+			"name": "Delete car",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars/4",
+					"raw": "http://localhost:8000/cars_api/public/api/cars/4",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars",
 						"4"
@@ -406,17 +457,20 @@
 			"response": []
 		},
 		{
-			"name": "Изминение цвета у авто с id 2",
+			"name": "Change color",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars/2?color=black",
+					"raw": "http://localhost:8000/cars_api/public/api/cars/2?color=black",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars",
 						"2"
@@ -437,17 +491,20 @@
 			"response": []
 		},
 		{
-			"name": "Изминение VIN у авто с id 2",
+			"name": "Change VIN",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "car.loc/api/cars/2?VIN=3VWDP7AJ7DM356782",
+					"raw": "http://localhost:8000/cars_api/public/api/cars/2?VIN=3VWDP7AJ7DM356782",
+					"protocol": "http",
 					"host": [
-						"car",
-						"loc"
+						"localhost"
 					],
+					"port": "8000",
 					"path": [
+						"cars_api",
+						"public",
 						"api",
 						"cars",
 						"2"

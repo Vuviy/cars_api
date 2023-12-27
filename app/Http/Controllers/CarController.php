@@ -10,9 +10,14 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class CarController extends Controller
 {
-    public function export() 
+    public function export()
         {
             return Excel::download(new CarsExport, 'cars.xlsx');
         }
 
+
+        public function index()
+        {
+            return 'welcome';
+        }
 }
